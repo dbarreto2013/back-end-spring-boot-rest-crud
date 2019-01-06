@@ -95,7 +95,7 @@ public class ClienteRepositoryFirebase {
 		
 		ArrayList<Cliente> clientes = findAll();
 		this.clientes = (ArrayList<Cliente>) clientes.stream()
-				.map(clienteMap -> clienteMap.getId().equals(cliente.getId()) ? cliente : clienteMap)
+				.map(clienteMap -> (clienteMap != null && clienteMap.getId().equals(cliente.getId())) ? cliente : clienteMap)
 				.collect(Collectors.toList());
 
 		final FirebaseDatabase database = FirebaseDatabase.getInstance("https://brasileiro-7898a.firebaseio.com/");
