@@ -33,5 +33,5 @@ Atualizar cliente: #PUT `http://localhost/cliente/{id}`
 
 ## Eventuais dúvidas
 
-Entre em contato via e-mail d.barreto.santos@gmail.com
+Entre em contato via e-mail d.barreto.santos@gmail.com ou Linkedin https://www.linkedin.com/in/daniel-barreto-7a795728/
 
