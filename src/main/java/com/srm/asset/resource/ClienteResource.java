@@ -29,25 +29,25 @@ public class ClienteResource {
 	private ClienteService clienteService;
 
 	@GetMapping("/clientes")
-	@CrossOrigin(origins = "http://localhost:8080")
+	@CrossOrigin(origins = "http://localhost:4200")
 	public List<Cliente> getClientes() {
 		return clienteService.findAll();
 	}
 
 	@PostMapping("/add")
-	@CrossOrigin(origins = "http://localhost:8080")
+	@CrossOrigin(origins = "http://localhost:4200")
 	Cliente add(@RequestBody Cliente cliente) {
 		return clienteService.add(cliente);
 	}
 
 	@DeleteMapping("/delete/{id}")
-	@CrossOrigin(origins = "http://localhost:8080")
+	@CrossOrigin(origins = "http://localhost:4200")
 	void delete(@PathVariable String id) {
 		clienteService.delete(id);
 	}
 
 	@PutMapping("/{id}")
-	@CrossOrigin(origins = "http://localhost:8080")
+	@CrossOrigin(origins = "http://localhost:4200")
 	Cliente update(@RequestBody Cliente cliente, @PathVariable String id) {
 		cliente.setId(UUID.fromString(id).toString());
 		return clienteService.update(cliente);
