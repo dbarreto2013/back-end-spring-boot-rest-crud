@@ -26,10 +26,13 @@ Iniciando a aplicação, conforme exemplo:
 
 Operações REST da aplicação:
 
-Recuperar todos os clientes: #GET `http://localhost/cliente/clientes`
-Adiciona um novo cliente: #POST `http://localhost/cliente/add`
-Deletar cliente: #DELETE `http://localhost/cliente/delete/{id}`
-Atualizar cliente: #PUT `http://localhost/cliente/{id}`
+Recuperar todos os clientes: #GET `http://localhost:8080/cliente/clientes`
+
+Adiciona um novo cliente: #POST `http://localhost:8080/cliente/add`
+
+Deletar cliente: #DELETE `http://localhost:8080/cliente/delete/{id}`
+
+Atualizar cliente: #PUT `http://localhost:8080/cliente/{id}`
 
 ## Eventuais dúvidas
 
